@@ -1,0 +1,268 @@
+.create-profile-card, .edit-profile-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-lg) var(--space-sm);
+    margin: var(--space-lg) auto;
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.create-profile-card form, .edit-profile-card form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-md) var(--space-xl);
+    gap: var(--space-lg);
+}
+
+.profile-age-container, .profile-country-container, .profile-occupation-container,
+.reading-length-container, .reading-pace-container
+{
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+}
+
+.profile-biography-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    width: 90%;
+}
+
+.biography-input-field
+{
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    width: 100%;
+    font-size: var(--font-size-md);
+    font-family: inherit;
+}
+
+.biography-input-field:focus
+{
+    outline: none;
+    border: 1px solid var(--primary);
+}
+
+.preferences-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.profile-submit-button, .edit-profile-save-changes-button, .edit-profile-cancel-button
+{
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-xxxl);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    transition: all 0.2s;
+}
+
+.edit-form-buttons
+{
+    display: flex;
+    margin-top: var(--space-md);
+    gap: var(--space-md);
+}
+
+.profile-submit-button
+{
+    margin: 0 auto;
+}
+
+.profile-submit-button, .edit-profile-save-changes-button
+{
+    background: var(--primary);
+    color: var(--off-white);
+}
+
+.profile-submit-button:hover, .edit-profile-save-changes-button:hover
+{
+    opacity: 0.8;
+}
+
+.edit-profile-cancel-button
+{
+    border: 1px solid var(--border);
+    color: var(--cancel-charcoal);
+    background: var(--off-white);
+}
+
+.edit-profile-cancel-button:hover
+{
+    border: 1px solid var(--dark-charcoal);
+}
+
+/* Modal styling - (General modal styling is in index.css but this is unique to profile) */
+.profile-delete-message-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.key-buttons-container
+{
+    display: flex;
+    margin: 0 auto;
+    gap: var(--space-xl);
+    align-items: flex-start;
+    width: 60%;
+}
+
+.change-password-button, .delete-account-button
+{
+    flex: 1;
+    background-color: var(--off-white);
+    margin: 0 auto;
+    padding: var(--space-sm) var(--space-lg);
+    font-size: large;
+    border-radius: var(--space-sm);
+    margin-bottom: var(--space-xl);
+    border: 1px solid var(--dark-charcoal);
+}
+
+.change-password-button:hover
+{
+    background-color: var(--dark-charcoal);
+    color: var(--off-white);
+}
+
+.change-password-button:active
+{
+    scale: 1.05;
+}
+
+.delete-account-button
+{
+    flex: 1;
+    background: var(--danger);
+    margin: 0 auto;
+    padding: var(--space-sm) var(--space-lg);
+    font-size: large;
+    color: var(--off-white);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--space-sm);
+    margin-bottom: var(--space-xxl);
+}
+
+.delete-account-button:hover
+{
+    opacity: 0.8;
+}
+
+.delete-account-button:active
+{
+    scale: 1.05;
+}
+
+.account-delete-message-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.delete-account-text-input
+{
+    font-size: var(--font-size-md);
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid black;
+}
+
+.account-delete:disabled
+{
+    opacity: 0.5;
+}
+
+.modal-password-container
+{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.modal-password-container .show-password-icon
+{
+    position: absolute;
+    right: var(--space-md);
+    cursor: pointer;
+    top: 8px;
+}
+
+.modal-password-container input
+{
+    padding-right: var(--space-xxl);
+    width: 100%;
+}
+
+.password-change-strength-container
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.password-changed-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.password-change-success-message
+{
+    font-weight: var(--font-weight-bold);
+}
+
+.password-changed-container .modal-close
+{
+    margin: 0 auto;
+}
+
+.password-confirm:disabled
+{
+    opacity: 0.5;
+}
+
+@media(max-width: 500px)
+{
+    .create-profile-card, .edit-profile-card
+    {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .profile-age-container, .profile-country-container, .profile-occupation-container,
+    .reading-length-container, .reading-pace-container
+    {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .profile-biography-container
+    {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .key-buttons-container
+    {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .change-password-button, .delete-account-button
+    {
+        width: 100%;
+    }
+}

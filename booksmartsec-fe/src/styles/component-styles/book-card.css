@@ -1,0 +1,115 @@
+.book-card
+{
+    display: grid;
+    grid-template-rows: 100px 100px 60px 30px 120px;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    background: var(--off-white);
+    box-shadow: var(--card-shadow);
+}
+
+.book-cover-row
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-cover
+{
+    height: 80px;
+    width: 60px;
+}
+
+.title-author-row
+{
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+/*
+* Button area styling
+*/
+
+.book-card-button-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.book-detail-button
+{
+    width: 100%;
+    padding: var(--space-sm) var(--space-xl);
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    border-radius: 50px;
+}
+
+.book-card-button-container-bottom
+{
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.book-detail-button
+{
+    background: var(--primary);
+    color: var(--off-white);
+    border: 1px solid transparent;
+}
+
+.book-detail-button:hover
+{
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+
+.book-card-update-button
+{
+    border: 1px solid var(--register);
+    color: var(--register);
+}
+
+.book-card-update-button:hover
+{
+    background: var(--register);
+    color: var(--off-white);
+    border: 1px solid transparent;
+}
+
+.book-card-delete-button
+{
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+
+.book-card-delete-button:hover
+{
+    background: var(--danger);
+    color: var(--off-white);
+    border: 1px solid transparent;
+}
+
+@media (max-width: 768px)
+{
+    .book-card
+    {
+        width: 100%;
+        max-width: 400px;
+    }
+}

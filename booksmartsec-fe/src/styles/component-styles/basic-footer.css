@@ -1,0 +1,20 @@
+.basic-footer-wrapper
+{
+    width: 100%;
+    margin-top: auto;
+}
+
+.basic-footer-inner
+{
+    text-align: center;
+}
+
+.footer-copyright
+{
+    color: var(--off-white);
+}
+
+.rights-statement
+{
+    color: var(--soft-white);
+}

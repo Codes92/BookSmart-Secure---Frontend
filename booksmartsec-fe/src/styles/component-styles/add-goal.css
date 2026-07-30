@@ -1,0 +1,63 @@
+.add-goal-card
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background: var(--white);
+    padding: var(--space-lg);
+    align-items: center;
+    margin: 0 auto;
+    gap: var(--space-lg);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.goal-enter-title
+{
+    color: var(--primary-hover);
+    text-align: center;
+}
+
+.goal-genre-input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.goal-buttons-container
+{
+    display: flex;
+    gap: var(--space-md);
+}
+
+.add-goal-button
+{
+    background: var(--primary);
+    color: var(--white);
+}
+
+@media(max-width: 405px)
+{
+    .add-goal-card
+    {
+        max-width: 90%;
+    }
+
+    .goal-input
+    {
+        max-width: 90%;
+    }
+
+    .goal-genre-input
+    {
+        width: 100%;
+    }
+
+    .goal-buttons-container
+    {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,47 @@
+.book-search-results
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.search-result-card
+{
+    display: grid;
+    grid-template-rows: 100px 20px 20px 40px 1fr;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-lg);
+    padding: var(--space-md);
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
+}
+
+.search-book-cover
+{
+    height: 80px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+}
+
+.search-book-author
+{
+    font-weight: var(--font-weight-bold);
+    color: var(--light-charcoal);
+}
+
+.search-dropdown
+{
+    margin: 0 auto;
+}
+
+.search-add-book-button
+{
+    margin: 0 auto;
+}
+
+.search-add-book-button:hover
+{
+    opacity: 0.8;
+}
