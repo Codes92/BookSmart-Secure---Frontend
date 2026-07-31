@@ -203,7 +203,7 @@ export default function AddGoal()
             </div>
 
             <div className="back-to-library-button-container">
-                <button className="back-to-library-button button" onClick={() => navigate('/goals')}>
+                <button className="go-to-button button" onClick={() => navigate('/goals')}>
                     Back to Goals
                 </button>
             </div>

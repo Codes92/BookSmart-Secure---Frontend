@@ -64,3 +64,8 @@
     font-weight: var(--font-weight-bold);
     font-style: italic;
 }
+
+.security-page-button-container
+{
+    margin: 0 auto;
+}

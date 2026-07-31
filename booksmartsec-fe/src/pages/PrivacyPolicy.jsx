@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 
 import "../styles/page-styles/privacy-policy.css";
 
@@ -112,6 +113,12 @@ export default function PrivacyPolicy()
                 <div className="privacy-policy-section">
                     <h2 className="privacy-policy-section-title">Children's Privacy</h2>
                     <p>This application is not directed at Children under 13 years of age.</p>
+                </div>
+
+                <div className="security-page-button-container">
+                    <button className="go-to-button button">
+                        Return
+                    </button>
                 </div>
             </div>
         </div>
