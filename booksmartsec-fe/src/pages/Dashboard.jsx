@@ -159,10 +159,6 @@ export default function Dashboard()
 
                 {error && <p className="error-message">{error}</p>}
 
-                <div className="dashboard-greeting">
-                    <h1>Hello, {user.username}</h1>
-                </div>
-
                 <div className="page-heading">
                     <h1 className="page-title">Your Dashboard</h1>
                     <p className="page-subheading">Your reading, at a glance</p>
