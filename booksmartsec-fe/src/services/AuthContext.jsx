@@ -15,7 +15,7 @@ export function AuthProvider({children})
             try
             {
                 const result = await Promise.race([
-                    fetch('http://localhost:8081/auth/me', {
+                    fetch(`${import.meta.env.VITE_API_URL}/auth/me`, {
                         credentials: 'include' // Send cookie automatically
                     }),
                     new Promise((_, reject) => 

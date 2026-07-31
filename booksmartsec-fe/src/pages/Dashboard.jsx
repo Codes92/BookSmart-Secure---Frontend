@@ -203,7 +203,7 @@ export default function Dashboard()
                                 <div className="dashboard-metric-container">
                                     <Star className="dashboard-icon" size={40}/>
                                     <div className="dashboard-value">
-                                        <h2 className="dashboard-metric-value">{averageRating}</h2>
+                                        <h2 className="dashboard-metric-value">{averageRating ? averageRating : 0}</h2>
                                     </div>
                                     <p className="dashboard-metric-key">Your average rating</p>
                                 </div>
