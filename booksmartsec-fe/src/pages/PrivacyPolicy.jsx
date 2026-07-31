@@ -4,6 +4,8 @@ import "../styles/page-styles/privacy-policy.css";
 
 export default function PrivacyPolicy()
 {
+    const navigate = useNavigate();
+
     return (
         <div className="page-wrapper">
             <div className="page-content privacy-policy-page">
@@ -116,7 +118,7 @@ export default function PrivacyPolicy()
                 </div>
 
                 <div className="security-page-button-container">
-                    <button className="go-to-button button">
+                    <button className="primary-button go-to-button" onClick={() => navigate(-1)}>
                         Return
                     </button>
                 </div>
